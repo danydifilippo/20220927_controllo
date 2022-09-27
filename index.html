@@ -18,6 +18,7 @@
           <div id="label">100%</div>
         </div>
       </div>
+      <p id="message"></p>
     </header>
     <div id="title">
       <h2>Aggiungi le tue spese al budget cercando di non andare in rosso:</h2>
@@ -25,33 +26,66 @@
     <section>
       <div class="sezioni" id="budIn">
         <h3>Budget iniziale <span>18.000 €</span></h3>
+        <div class="descr">
         <div class="symb"><i class="fa-solid fa-piggy-bank"></i></div>
         <div class="details">
           <p id="lastBud"></p>
         </div>
+    </div>
       </div>
       <div class="sezioni" id="budOut1">
         <h3>Spese programmate <span id="bill">0</span></h3>
+        <div class="descr">
         <div class="symb"><i class="fa-solid fa-gavel"></i></div>
         <div class="details">
-          <p>Ditta costruzioni <span>7.000 €</span> <button onclick="add(this.id)" id="7000">Aggiungi</button> 
+          <p>Ditta costruzioni <span>7.000 €</span></p>
+          <p><button onclick="add(this.id)" id="7000">Aggiungi</button> 
             <button onclick="remove(this.id)" id="7000">Rimuovi</button></p>
         </div>
+    </div>
+    <div class="descr">
         <div class="symb"><i class="fa-solid fa-file-contract"></i></div>
         <div class="details">
-          <p>Permessi e certificati <span>1.500 €</span> <button onclick="add(this.id)" id="1500" >Aggiungi</button> <button onclick="remove(this.id)" id="1500" >Rimuovi</button></p>
+          <p>Permessi e certificati <span>3.000 €</span></p>
+          <p><button onclick="add(this.id)" id="3000" >Aggiungi</button>
+            <button onclick="remove(this.id)" id="3000" >Rimuovi</button></p>
         </div>
+    </div>
+    <div class="descr">
         <div class="symb"><i class="fa-solid fa-paint-roller"></i></div>
         <div class="details">
-            <p>Imbianchino <span>2.000 €</span> <button onclick="add(this.id)" id="2000" >Aggiungi</button> <button onclick="remove(this.id)" id="2000" >Rimuovi</button></p>
+            <p>Imbianchino <span>3.000 €</span></p>
+            <p><button onclick="add(this.id)" id="3000" >Aggiungi</button>
+                <button onclick="remove(this.id)" id="3000" >Rimuovi</button></p>
           </div>
       </div>
+    <div class="descr">
+        <div class="symb"><i class="fa-solid fa-clone"></i></div>
+        <div class="details">
+            <p>Imbianchino <span>2.000 €</span></p>
+            <p><button onclick="add(this.id)" id="2000" >Aggiungi</button>
+                <button onclick="remove(this.id)" id="2000" >Rimuovi</button></p>
+          </div>
+      </div>
+    </div>
       <div class="sezioni" id="budOut2">
         <h3>Spese inaspettate <span id="billInas"></span></h3>
+        <div class="descr">
         <div class="symb"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
         <div class="details">
-            <p>Aumento costo materiali <span>2.000 €</span> <button>Aggiungi</button> <button>Rimuovi</button></p>
+            <p>Aumento costo materiali <span>2.000 €</span></p>
+            <p><button onclick="add2(this.id)" id="2000" >Aggiungi</button>
+                <button onclick="remove2(this.id)" id="2000" >Rimuovi</button></p>
           </div>
+      </div>
+      <div class="descr">
+        <div class="symb"><i class="fa-solid fa-house-circle-exclamation"></i></div>
+        <div class="details">
+            <p>Imprevisti <span>1.000 €</span></p>
+            <p><button onclick="add2(this.id)" id="1000" >Aggiungi</button>
+                <button onclick="remove2(this.id)" id="1000" >Rimuovi</button></p>
+          </div>
+      </div>
       </div>
       </div>
     </section>

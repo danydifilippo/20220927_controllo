@@ -70,6 +70,7 @@ header i {
     display: inline;
     background-color: #63e6be;
     color: #183153;
+    margin: 0 0.5em 0.5em 0;
 }
 
 #budOut1 .symb {
@@ -79,8 +80,31 @@ header i {
 
 #budOut2 .symb {
     background-color: #e599f7;
-    font-size: 35px;
+    font-size: 25px;
+    padding: 0.4em;
 }
 .fa-file-contract {
-    padding: 0.2em;
+    font-size: smaller;
+    padding: 0.2em; 
+}
+.descr {
+    display: flex;
+    font-size: 25px;
+}
+.details p{
+    margin: 0;
+}
+.details button {
+    font-size: 18px;
+    background-color: #73c0fc;
+    border-radius: 10cm;
+    border: none;
+    box-shadow: 5px 5px 10px gray;
+    padding: 0.2em 0.5em;
+}
+#budOut2 button {
+    background-color: #e599f7;
+}
+.fa-arrow-up-from-bracket {
+    font-size: 33px;
 }

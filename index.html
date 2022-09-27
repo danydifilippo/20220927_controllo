@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Logica e controlli" content="budget, logica, cicli, controlli" />
+    <title>Logica e controlli su budget</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://kit.fontawesome.com/671abf387b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <h1>My budget</h1>
+      <h2>Lavori in casa</h2>
+      <div class="icon"><i class="fa-solid fa-wallet"></i></div>
+      <div id="myProgress">
+        <div id="myBar">
+          <div id="label">100%</div>
+        </div>
+      </div>
+    </header>
+    <div id="title">
+      <h2>Aggiungi le tue spese al budget cercando di non andare in rosso:</h2>
+    </div>
+    <section>
+      <div class="sezioni" id="budIn">
+        <h3>Budget iniziale <span>18.000 €</span></h3>
+        <div class="symb"><i class="fa-solid fa-piggy-bank"></i></div>
+        <div class="details">
+          <p id="lastBud"></p>
+        </div>
+      </div>
+      <div class="sezioni" id="budOut1">
+        <h3>Spese programmate <span id="bill">0</span></h3>
+        <div class="symb"><i class="fa-solid fa-gavel"></i></div>
+        <div class="details">
+          <p>Ditta costruzioni <span>7.000 €</span> <button onclick="add(this.id)" id="7000">Aggiungi</button> 
+            <button onclick="remove(this.id)" id="7000">Rimuovi</button></p>
+        </div>
+        <div class="symb"><i class="fa-solid fa-file-contract"></i></div>
+        <div class="details">
+          <p>Permessi e certificati <span>1.500 €</span> <button onclick="add(this.id)" id="1500" >Aggiungi</button> <button onclick="remove(this.id)" id="1500" >Rimuovi</button></p>
+        </div>
+        <div class="symb"><i class="fa-solid fa-paint-roller"></i></div>
+        <div class="details">
+            <p>Imbianchino <span>2.000 €</span> <button onclick="add(this.id)" id="2000" >Aggiungi</button> <button onclick="remove(this.id)" id="2000" >Rimuovi</button></p>
+          </div>
+      </div>
+      <div class="sezioni" id="budOut2">
+        <h3>Spese inaspettate <span id="billInas"></span></h3>
+        <div class="symb"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
+        <div class="details">
+            <p>Aumento costo materiali <span>2.000 €</span> <button>Aggiungi</button> <button>Rimuovi</button></p>
+          </div>
+      </div>
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
